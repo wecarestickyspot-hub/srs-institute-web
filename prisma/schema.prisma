@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Yeh hamara Certificate ka table (model) hai
+model Certificate {
+  id          String   @id @default(cuid())
+  certId      String   @unique // Example: "SRS2024001"
+  studentName String
+  course      String
+  issueDate   String   // Example: "15 March 2024"
+  grade       String
+  createdAt   DateTime @default(now())
+}
+
+// Aap chahein to Enquiry form ke liye bhi ek model bana sakte hain
+model Enquiry {
+  id        String   @id @default(cuid())
+  fullName  String
+  phone     String
+  email     String?
+  age       Int?
+  course    String
+  message   String?
+  createdAt DateTime @default(now())
+}
