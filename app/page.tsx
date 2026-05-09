@@ -27,22 +27,26 @@ export default function Home() {
     const obs = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         if (e.isIntersecting) {
-          e.target.style.opacity = '1';
-          e.target.style.transform = 'translateY(0)';
+          // TypeScript fix: e.target ko HTMLElement batana
+          const target = e.target as HTMLElement;
+          target.style.opacity = '1';
+          target.style.transform = 'translateY(0)';
         }
       });
     }, { threshold: 0.08 });
 
     const animatedElements = document.querySelectorAll('.course-card, .why-card, .testi-card, .contact-card, .success-card, .review-card, .faq-item');
     animatedElements.forEach((el) => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(24px)';
-      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      // TypeScript fix: el ko HTMLElement batana
+      const targetEl = el as HTMLElement;
+      targetEl.style.opacity = '0';
+      targetEl.style.transform = 'translateY(24px)';
+      targetEl.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
       obs.observe(el);
     });
   }, []);
 
-  const triggerToast = (msg) => {
+  const triggerToast = (msg: string) => {
     setToastMsg(msg);
     setShowToast(true);
     setTimeout(() => setShowToast(false), 4000);
