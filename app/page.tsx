@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Head from "next/head";
 
 // --- SARE COMPONENTS IMPORT KIYE GAYE HAIN ---
 import Navbar from "../components/Navbar";
@@ -35,7 +34,10 @@ export default function Home() {
       });
     }, { threshold: 0.08 });
 
-    const animatedElements = document.querySelectorAll('.course-card, .why-card, .testi-card, .contact-card, .success-card, .review-card, .faq-item');
+    const animatedElements = document.querySelectorAll(
+      '.course-card, .why-card, .testi-card, .contact-card, .success-card, .review-card, .faq-item'
+    );
+    
     animatedElements.forEach((el) => {
       // TypeScript fix: el ko HTMLElement batana
       const targetEl = el as HTMLElement;
@@ -54,26 +56,31 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>SRS Computer Institute, Sikar</title>
-      </Head>
+      {/* Note: Next.js App Router mein <Head> ki jagah metadata layout.tsx se handle hota hai, 
+        jo humne pehle hi ekdum perfect local SEO ke sath configure kar diya hai!
+      */}
 
       {/* Ekdam Clean aur Modular Website Structure */}
       <Navbar />
-      <Hero />
-      <Courses />
       
-      <CertificateSection triggerToast={triggerToast} />
-      
-      <WhyUs />
-      <Testimonials />
-      
-      <AdmissionSection triggerToast={triggerToast} />
-      
-      <Reviews />
-      <SuccessGallery />
-      <FAQ />
-      <Contact />
+      {/* Semantic Tags used for better SEO structure */}
+      <main>
+        <Hero />
+        <Courses />
+        
+        <CertificateSection triggerToast={triggerToast} />
+        
+        <WhyUs />
+        <Testimonials />
+        
+        <AdmissionSection triggerToast={triggerToast} />
+        
+        <Reviews />
+        <SuccessGallery />
+        <FAQ />
+        <Contact />
+      </main>
+
       <Footer />
 
       <WhatsAppFloat />
