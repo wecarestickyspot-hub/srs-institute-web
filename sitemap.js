@@ -1,13 +1,10 @@
 export default function sitemap() {
-  // Ekdum sateek bina www. wala domain URL 👇
-  const baseUrl = 'https://srscomputerinstitute.in'; 
-
   return [
     {
-      url: baseUrl,
+      url: 'https://srscomputerinstitute.in',
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 1.0, 
+      priority: 1,
     },
   ];
 }

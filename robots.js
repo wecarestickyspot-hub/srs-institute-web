@@ -3,8 +3,9 @@ export default function robots() {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/admin/', // Admin panel ko Google se chhupayein
+      disallow: '/admin/', // Admin panel aur login page ko Google search se chhupane ke liye
     },
-    sitemap: 'https://www.aapkadomain.com/sitemap.xml', // Yahan apna asli domain dalein
+    // Aapka ekdum asli aur final sitemap URL Bina www. ke 👇
+    sitemap: 'https://srscomputerinstitute.in/sitemap.xml', 
   }
 }
