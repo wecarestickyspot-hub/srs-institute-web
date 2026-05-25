@@ -11,7 +11,7 @@ export default function Reviews() {
         <div className="g-rating-box">
           <div className="g-logo">🟦</div>
           <div>
-            <div className="g-score">4.9</div>
+            <div className="g-score">5.0</div>
             <div className="g-stars-row">★★★★★</div>
             <div className="g-count">120+ Google Reviews</div>
           </div>
@@ -27,31 +27,35 @@ export default function Reviews() {
           <div className="review-top">
             <div className="reviewer">
               <div className="reviewer-ava">R</div>
-              <div><div className="reviewer-name">Ramesh Choudhary</div><div className="reviewer-time">2 weeks ago</div></div>
+              <div><div className="reviewer-name">Lokesh Bhatt</div><div className="reviewer-time">2 weeks ago</div></div>
             </div>
             <span className="review-g-icon">🟦</span>
           </div>
           <div className="review-stars">★★★★★</div>
-          <div className="review-text">&quot;Mera beta yahan Web Development seekh raha hai. Teacher bahut achhe se samjhate hain. Practical ke upar focus hai. Hum bahut khush hain is institute se.&quot;</div>
-          <span className="review-course-tag">Parent Review · Web Dev</span>
+          <div className="review-text">&quot;Best coaching center in sikar for Digital marketing, Data science, Data Analyst,Ui_ux and web development etc&quot;</div>
+          <span className="review-course-tag">Student . Data Analyst</span>
         </div>
         <div className="review-card">
           <div className="review-top">
             <div className="reviewer">
               <div className="reviewer-ava">S</div>
-              <div><div className="reviewer-name">Sunita Sharma</div><div className="reviewer-time">1 month ago</div></div>
+              <div><div className="reviewer-name">
+                Sharma ji</div><div className="reviewer-time">1 month ago</div></div>
             </div>
             <span className="review-g-icon">🟦</span>
           </div>
           <div className="review-stars">★★★★★</div>
-          <div className="review-text">&quot;Digital Marketing course complete kiya. SRS Institute ne sirf course nahi, career bhi diya. 3 mahine mein naukri mil gayi Jaipur mein. Sir ka bahut bahut shukriya!&quot;</div>
-          <span className="review-course-tag">Student · Digital Marketing</span>
+          <div className="review-text">&quot;I am ex. Student of srs
+            Very good quality and behaviour
+            Now I am a graphic designer in jaipur!&quot;</div>
+          <span className="review-course-tag">Student · Graphics Designer</span>
         </div>
         <div className="review-card">
           <div className="review-top">
             <div className="reviewer">
               <div className="reviewer-ava">M</div>
-              <div><div className="reviewer-name">Mahesh Kumar Saini</div><div className="reviewer-time">3 weeks ago</div></div>
+              <div><div className="reviewer-name">
+                keshav kumawat</div><div className="reviewer-time">3 weeks ago</div></div>
             </div>
             <span className="review-g-icon">🟦</span>
           </div>

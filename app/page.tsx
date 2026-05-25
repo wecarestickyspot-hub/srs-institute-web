@@ -10,7 +10,7 @@ import WhyUs from "../components/WhyUs";
 import Testimonials from "../components/Testimonials";
 import AdmissionSection from "../components/AdmissionSection";
 import Reviews from "../components/Reviews";
-import SuccessGallery from "../components/SuccessGallery";
+// import SuccessGallery from "../components/SuccessGallery";
 import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -76,7 +76,7 @@ export default function Home() {
         <AdmissionSection triggerToast={triggerToast} />
         
         <Reviews />
-        <SuccessGallery />
+        {/* <SuccessGallery /> */}
         <FAQ />
         <Contact />
       </main>
