@@ -7,14 +7,15 @@ import Hero from "../components/Hero";
 import Courses from "../components/Courses";
 import CertificateSection from "../components/CertificateSection";
 import WhyUs from "../components/WhyUs";
-import Testimonials from "../components/Testimonials";
+import Testimonials from "../components/Trainers";
 import AdmissionSection from "../components/AdmissionSection";
 import Reviews from "../components/Reviews";
 // import SuccessGallery from "../components/SuccessGallery";
 import FAQ from "../components/FAQ";
-import Contact from "../components/Contact";
+// import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import WhatsAppFloat from "../components/WhatsAppFloat";
+import Trainers from "../components/Trainers";
 
 export default function Home() {
   // Toast State
@@ -71,14 +72,14 @@ export default function Home() {
         <CertificateSection triggerToast={triggerToast} />
         
         <WhyUs />
-        <Testimonials />
+        <Trainers />
         
         <AdmissionSection triggerToast={triggerToast} />
         
         <Reviews />
         {/* <SuccessGallery /> */}
         <FAQ />
-        <Contact />
+        {/* <Contact /> */}
       </main>
 
       <Footer />

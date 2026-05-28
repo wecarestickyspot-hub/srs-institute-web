@@ -7,7 +7,7 @@ const navItems = [
   { label: "Courses", href: "#courses" },
   { label: "Certificate", href: "#certificate" },
   { label: "About", href: "#why-us" },
-  { label: "Students", href: "#testimonials" },
+  { label: "Trainer", href: "#trainers" },
   { label: "Contact", href: "#contact" },
 ];
 

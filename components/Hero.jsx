@@ -44,7 +44,7 @@ export default function Hero() {
         </div>
                 <div>
                   <div className="hcard-name">SRS Computer Institute</div>
-                  <div className="hcard-sub">Sikar · Est. 2020</div>
+                  <div className="hcard-sub">Sikar · Est. 2024</div>
                 </div>
               </div>
               <div className="hcard-courses">
