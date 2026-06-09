@@ -65,12 +65,12 @@ const team: Trainer[] = [
   {
     name: "Sunita Choudhary",
     badge: "Mentor",
-    role: "Junior Graphic Designer & Trainer",
-    skills: ["Adobe Photoshop", "CorelDRAW", "Canva Pro", "Social Media Creatives", "Basic UI/UX"],
+    role: "Counselor & Soft Skills Trainer",
+    skills: ["Effective Communication", "Interview Preparation", "Resume Building", "Career Counseling", "Personality Development"],
     experience: "2+ Years Design Experience",
-    students: "500+ Mentored",
-    avatar: "/trainers/vikas.webp",
-    initial: "V",
+    students: "700+ Mentored",
+    avatar: "/trainers/sunita.webp",
+    initial: "S",
     quote: "Design sirf visuals nahi, ek communication hai. Practical practice se hi creativity nikhar kar aati hai.",
   },
 ];
