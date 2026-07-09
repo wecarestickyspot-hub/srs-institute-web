@@ -75,7 +75,7 @@ export default function Footer() {
                 Address
               </strong>
               <span className="block mt-1.5 text-[13.5px] text-white/70 leading-[1.7] group-hover:text-white transition-colors duration-300">
-                Sanjay Restaurant wali gali,<br />Piprali Road, Sikar, Rajasthan
+                Near Getwell Hospital,<br />Sakpura Mohlla, Sikar, Rajasthan
               </span>
             </li>
             

@@ -22,7 +22,7 @@ export default function Hero() {
             </div>
             <div className="hero-stats">
               <div className="hero-stat">
-                <div className="hero-stat-num">16+</div>
+                <div className="hero-stat-num">18+</div>
                 <div className="hero-stat-label">Courses</div>
               </div>
               <div className="hero-stat" style={{ paddingLeft: '2rem', borderLeft: '1px solid var(--border)' }}>
