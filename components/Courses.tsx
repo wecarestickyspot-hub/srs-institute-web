@@ -41,12 +41,12 @@ const courses: Course[] = [
   { icon:"🎬", name:"Graphic & Video Editing",desc:"Photoshop, Premiere Pro, social media content",      pill:"Creative",     pillColor:pillColors["Creative"],     duration:"4-5 Months",  level:1 },
   { icon:"📢", name:"Digital Marketing",      desc:"SEO, Google Ads, social media campaigns",            pill:"Marketing",    pillColor:pillColors["Marketing"],    duration:"1-2 Months",  level:2 },
   { icon:"📐", name:"AutoCAD",                desc:"2D/3D drafting, technical & architecture plans",     pill:"Engineering",  pillColor:pillColors["Engineering"],  duration:"2 Months",  level:2 },
-  { icon:"🏛️", name:"Architecture",           desc:"Building design, structural planning",               pill:"Professional", pillColor:pillColors["Professional"], duration:"4 Months",  level:2 },
+  { icon:"🏛️", name:"Architecture",           desc:"Building design, structural planning",               pill:"Professional", pillColor:pillColors["Professional"], duration:"6-12 Months",  level:2 },
   { icon:"📈", name:"Advance Excel",          desc:"Pivot tables, VLOOKUP, macros, dashboards",          pill:"Office",       pillColor:pillColors["Office"],       duration:"1.5 Months",level:1 },
   { icon:"🖥️", name:"Basic Computer",         desc:"MS Office, typing, internet & OS basics",            pill:"Starter",      pillColor:pillColors["Starter"],      duration:"1 Month",   level:1 },
   { icon:"🔬", name:"Data Science",           desc:"Statistics, Python, ML models & projects",           pill:"Advanced",     pillColor:pillColors["Advanced"],     duration:"12-13 Months",  level:3 },
   { icon:"🛡️", name:"Cyber Security",         desc:"Ethical Hacking, Network Security & Pen Testing",    pill:"Advanced",     pillColor:pillColors["Advanced"],     duration:"12-13 Months",  level:3 },
-  { icon:"⚙️", name:"CNC Design",             desc:"AutoCAD, CAM Software, G-Code & 3D Modeling",       pill:"Intermediate", pillColor:pillColors["Intermediate"], duration:"3 Months",  level:2 },
+  { icon:"⚙️", name:"CNC Design",             desc:"AutoCAD, CAM Software, G-Code & 3D Modeling",       pill:"Intermediate", pillColor:pillColors["Intermediate"], duration:"6-12 Months",  level:2 },
 ];
 
 const filters = ["All", "Beginner", "Intermediate", "Advanced", "Creative", "Job Ready", "Future Tech"];
