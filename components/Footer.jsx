@@ -25,7 +25,7 @@ export default function Footer() {
             </div>
           </Link>
           <p className="opacity-80 leading-[1.8] mt-2">
-            Expert training with practical classes and industry-recognized certificates. Empowering students in Sikar since 2024.
+            Expert training with Prime Location and industry-recognized certificates. Empowering students in Sikar since 2024.
           </p>
         </div>
         
