@@ -13,7 +13,7 @@ export default function AdmissionSection({ triggerToast }) {
       triggerToast("⚠️ Please bharein: Naam, Phone aur Course");
       return;
     }
-    
+
     setLoading(true);
     try {
       const res = await fetch("/api/enquiry", {
@@ -22,7 +22,7 @@ export default function AdmissionSection({ triggerToast }) {
         body: JSON.stringify(formData),
       });
       const result = await res.json();
-      
+
       if (result.success) {
         triggerToast("✅ Enquiry submitted! We will contact you soon.");
         setFormData({ fullName: "", phone: "", email: "", age: "", course: "", message: "" });
@@ -61,10 +61,32 @@ export default function AdmissionSection({ triggerToast }) {
             </div>
             <div className="form-row">
               <div className="form-group full"><label className="f-label">Course Interested In *</label>
-                <select name="course" value={formData.course} onChange={handleChange} className="f-select">
-                  <option value="" disabled>-- Course select karein --</option>
-                  <option>Web Design</option><option>Web Development</option><option>Data Analyst</option>
-                  <option>Tally / ERP / Prime with GST</option><option>Full Stack Development</option>
+                <select
+                  name="course"
+                  value={formData.course}
+                  onChange={handleChange}
+                  className="f-select"
+                >
+                  <option value="" disabled>-- Course Select Karein --</option>
+
+                  <option value="Web Design">Web Design</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Data Analyst">Data Analyst</option>
+                  <option value="Tally / ERP with GST">Tally / ERP with GST</option>
+                  <option value="Full Stack Development">Full Stack Development</option>
+                  <option value="UI / UX Design">UI / UX Design</option>
+                  <option value="Artificial Intelligence">Artificial Intelligence</option>
+                  <option value="3D Designing">3D Designing</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="Video Editing">Video Editing</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
+                  <option value="AutoCAD">AutoCAD</option>
+                  <option value="Architecture">Architecture</option>
+                  <option value="Advance Excel">Advance Excel</option>
+                  <option value="Basic Computer">Basic Computer</option>
+                  <option value="Data Science">Data Science</option>
+                  <option value="Cyber Security">Cyber Security</option>
+                  <option value="CNC Design">CNC Design</option>
                 </select>
               </div>
             </div>
